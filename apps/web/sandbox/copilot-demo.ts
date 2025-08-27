@@ -1,15 +1,25 @@
-// This file is only for testing GitHub Copilot suggestions.
-// Open this file in VS Code and start typing below the TODOs.
-// Copilot will suggest code as ghost text. Press TAB to accept.
+// Minimal Copilot demo — self-contained & runnable with ts-node
 
-//
-// TODO: Write a function that adds two numbers
-//
+function add(a: number, b: number): number {
+  return a + b;
+}
 
-//
-// TODO: Write a function that checks if a string is a palindrome
-//
+function isPalindrome(str: string): boolean {
+  return str === str.split('').reverse().join('');
+}
 
-//
-// TODO: Write a function that fetches JSON from an API endpoint
-//
+async function fetchJson(url: string): Promise<unknown> {
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+  }
+  return response.json();
+}
+
+// Quick sanity logs so you see output
+console.log('add(2, 3) =', add(2, 3));
+console.log('isPalindrome("racecar") =', isPalindrome('racecar'));
+
+fetchJson('https://jsonplaceholder.typicode.com/todos/1')
+  .then((data: unknown) => console.log('Sample JSON:', data))
+  .catch((err: unknown) => console.error('Error:', err));
