@@ -1,0 +1,16 @@
+name: Feature request
+description: Suggest an idea for Abrid
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / alternatives

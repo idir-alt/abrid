@@ -63,3 +63,6 @@ Copy `.env.example` → `.env.local` for the web app if needed. The current MVP 
 
 ## License
 MIT © 2025 Amazigh Construction LLC
+
+## Deploy
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/idir-alt/abrid)

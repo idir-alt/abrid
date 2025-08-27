@@ -1,0 +1,4 @@
+*           @idir-alt
+packages/** @idir-alt
+apps/web/** @idir-alt
+apps/mobile/**  @idir-alt
