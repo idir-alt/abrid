@@ -1,0 +1,17 @@
+{
+  "name": "abrid",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm -ws run build",
+    "dev:web": "npm -w apps/web run dev",
+    "dev:mobile": "npm -w apps/mobile run start",
+    "test": "npm -ws run test"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}

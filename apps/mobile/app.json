@@ -1,0 +1,14 @@
+{
+  "expo": {
+    "name": "Abrid",
+    "slug": "abrid",
+    "version": "0.1.0",
+    "sdkVersion": "51.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "orientation": "portrait",
+    "icon": "./assets/icon.png"
+  }
+}
