@@ -9,9 +9,12 @@
     "build": "npm -ws run build",
     "dev:web": "npm -w apps/web run dev",
     "dev:mobile": "npm -w apps/mobile run start",
-    "test": "npm -ws run test"
+    "test": "npm -ws run test",
+    "demo:copilot": "ts-node apps/web/sandbox/copilot-demo.ts"
   },
   "devDependencies": {
+    "@types/node": "^24.3.0",
+    "ts-node": "^10.9.2",
     "typescript": "^5.4.0"
   }
 }
